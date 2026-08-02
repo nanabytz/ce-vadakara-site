@@ -1,0 +1,31 @@
+/* 1. Style the entire background and font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef; /* A light grey background */
+    color: #333333; /* Dark grey text for easy reading */
+    margin: 0; /* Removes default browser spacing */
+}
+
+/* 2. Style the top header box */
+header {
+    background-color: #003366; /* Professional Navy Blue */
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* 3. Style the main content area */
+main {
+    padding: 20px;
+    max-width: 800px; /* Keeps the text from stretching too wide */
+    margin: 0 auto; /* Centers the content on the screen */
+}
+
+/* 4. Style the individual sections to look like white cards */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a soft shadow behind the box */
+}
