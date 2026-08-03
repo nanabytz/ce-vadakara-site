@@ -1,39 +1,1212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="College of Engineering Vadakara (CEV) - Established in 1999 under CAPE, Govt. of Kerala. NBA Accredited ECE, ISO 9001:2015 Certified engineering institution offering B.Tech, MCA, and Diploma programs.">
+  <meta name="keywords"
+    content="College of Engineering Vadakara, CEV, CAPE Kerala, KTU engineering college, BTech admissions Kerala, ECE NBA, Kozhikode engineering college">
+  <meta property="og:title" content="College of Engineering Vadakara (CEV) | Official Portal">
+  <meta property="og:description"
+    content="Remastered portal for College of Engineering Vadakara - Premier Govt. affiliated engineering college in Kozhikode, Kerala.">
+  <meta property="og:type" content="website">
+
+  <title>College of Engineering Vadakara (CEV) | Premier Technical Institute</title>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+=======
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CE Vadakara | Student Portal</title>
+>>>>>>> 6ade8e60b361c1d3e118abb442017156bb96291a
 </head>
+
 <body>
 
-<header>
-        <h2>College of Engineering Vadakara</h2>
-        <nav>
-            <p>Home | Departments | Campus Life</p>
-        </nav>
-    </header>
+  <!-- =========================================================================
+       1. TOP UTILITY BAR
+       ========================================================================= -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <span><i class="fas fa-phone-alt"></i> Admission Helpline: <strong>+91 9292546125</strong> | 0496 2536125</span>
+        <span><i class="fas fa-graduation-cap"></i> CAP Code: <strong>CE VADAKARA</strong></span>
+        <span class="badge badge-cape"><i class="fas fa-landmark"></i> Under CAPE - Govt. of Kerala</span>
+      </div>
+      <div class="top-bar-links">
+        <a href="https://cev.etlab.in/" target="_blank" class="top-bar-link"><i class="fas fa-user-graduate"></i> ETLab
+          Portal</a>
+        <a href="https://app.ktu.edu.in/login.jsp" target="_blank" class="top-bar-link"><i
+            class="fas fa-university"></i> KTU Portal</a>
+        <a href="#quick-portals" class="top-bar-link"><i class="fas fa-shield-alt"></i> Student Grievance</a>
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <i class="fas fa-moon"></i> <span>Dark Mode</span>
+        </button>
+      </div>
+    </div>
+  </div>
 
-    <main>
-        <section>
-            <h1>Welcome to the CEV Student Guide</h1>
-            <p>Your ultimate resource for academics, tech fests, and college updates.</p>
-        </section>
+  <!-- =========================================================================
+       2. MAIN STICKY NAVIGATION HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon-wrap"
+          style="width: 48px; height: 48px; background: linear-gradient(135deg, #1e3a8a, #3b82f6); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(59,130,246,0.3);">
+          CEV
+        </div>
+        <div class="brand-text">
+          <h1>College of Engineering Vadakara</h1>
+          <span>Co-operative Academy of Professional Education (CAPE)</span>
+          <div class="brand-malayalam">കോളേജ് ഓഫ് എഞ്ചിനീയറിംഗ് വടകര</div>
+        </div>
+      </a>
 
-        <section>
-            <h3>Top Departments</h3>
-            <ul>
-                <li>Computer Science and Engineering</li>
-                <li>Electronics and Communication</li>
-                <li>Civil Engineering</li>
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item active"><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+
+          <li class="nav-item">
+            <a href="#overview" class="nav-link">Overview <i class="fas fa-chevron-down"
+                style="font-size:0.75rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#overview" class="dropdown-link">About Institution</a></li>
+              <li><a href="#principal" class="dropdown-link">Principal's Message</a></li>
+              <li><a href="#facilities" class="dropdown-link">Campus Amenities</a></li>
+              <li><a href="#achievers" class="dropdown-link">Achievements & Ranks</a></li>
             </ul>
-        </section>
-    </main>
+          </li>
 
-    <footer>
-        <p>Built from scratch for CE Vadakara.</p>
-    </footer>     
+          <li class="nav-item">
+            <a href="#departments" class="nav-link">Academics <i class="fas fa-chevron-down"
+                style="font-size:0.75rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#departments" class="dropdown-link">B.Tech Programs</a></li>
+              <li><a href="#departments" class="dropdown-link">Department of MCA</a></li>
+              <li><a href="#departments" class="dropdown-link">Diploma in Automation</a></li>
+              <li><a href="#facilities" class="dropdown-link">Academic Calendar</a></li>
+            </ul>
+          </li>
 
+          <li class="nav-item"><a href="#faculty" class="nav-link">Faculty</a></li>
+          <li class="nav-item"><a href="#notices" class="nav-link">Announcements</a></li>
+          <li class="nav-item"><a href="#placements" class="nav-link">Placements</a></li>
+          <li class="nav-item"><a href="#facilities" class="nav-link">Facilities</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. LIVE MARQUEE ANNOUNCEMENT TICKER
+       ========================================================================= -->
+  <div class="ticker-container">
+    <div class="ticker-label">
+      <i class="fas fa-bullhorn"></i> Live Updates
+    </div>
+    <div class="ticker-content">
+      <a href="#notices" class="ticker-item"><span class="new-tag">Admission 2026</span> B-Tech NON-KEAM Admission 2026
+        Registration Started! Apply Now</a>
+      <a href="#notices" class="ticker-item"><span class="new-tag">NBA</span> Department of ECE re-accredited by NBA
+        (National Board of Accreditation)</a>
+      <a href="#placements" class="ticker-item"><span class="new-tag">Placements</span> Congratulations to students
+        placed at Infosys, TCS, UST Global & QSpiders</a>
+      <a href="#notices" class="ticker-item"><span class="new-tag">IEEE</span> Devang CV wins IEEE Kerala Section
+        Outstanding Student Volunteer Award 2025</a>
+      <a href="#notices" class="ticker-item"><span class="new-tag">Event</span> START 2K26 - Bridge Course to
+        Engineering Registration Open</a>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       4. HERO SECTION WITH QUICK ADMISSION CARD
+       ========================================================================= -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badges">
+          <span class="badge badge-nba"><i class="fas fa-award"></i> NBA Accredited (ECE)</span>
+          <span class="badge badge-iso"><i class="fas fa-certificate"></i> ISO 9001:2015 Certified</span>
+          <span class="badge badge-cape"><i class="fas fa-shield-alt"></i> Govt. Approved Institution</span>
+        </div>
+
+        <h2 class="hero-title">
+          Empowering Innovation at <span>CE Vadakara</span>
+        </h2>
+
+        <p class="hero-subtitle">
+          Established in 1999 on the scenic 27-acre Kakoramala hilltop in Kozhikode, CEV is the premier engineering
+          institution dedicated to academic excellence, state-of-the-art research, and career transformation.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#admissions-card" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Apply for Admission
+            2026</a>
+          <a href="#notices" class="btn btn-accent"><i class="fas fa-bullhorn"></i> Latest Announcements</a>
+          <a href="#departments" class="btn btn-outline" style="color:white; border-color:rgba(255,255,255,0.4);"><i
+              class="fas fa-laptop-code"></i> Explore Programs</a>
+        </div>
+      </div>
+
+      <!-- Quick Admission Card -->
+      <div class="hero-card" id="admissions-card">
+        <h3><i class="fas fa-user-plus"></i> Admissions 2026</h3>
+        <p>Register interest for B.Tech, KEAM/Non-KEAM, NRI, Lateral Entry & MCA seats.</p>
+
+        <form class="hero-quick-form"
+          onsubmit="event.preventDefault(); alert('Thank you! Our admission desk helpline (+91 9292546125) will contact you shortly.');">
+          <div class="form-group">
+            <input type="text" placeholder="Full Name *" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Mobile Phone Number *" required>
+          </div>
+          <div class="form-group">
+            <select required>
+              <option value="">Select Preferred Program *</option>
+              <option value="cse">B.Tech Computer Science & Engineering</option>
+              <option value="ece">B.Tech Electronics & Communication (NBA)</option>
+              <option value="eee">B.Tech Electrical & Electronics</option>
+              <option value="ce">B.Tech Civil Engineering</option>
+              <option value="it">B.Tech Information Technology</option>
+              <option value="mca">Master of Computer Applications (MCA)</option>
+              <option value="robotics">Diploma in Automation & Robotics</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-accent" style="width: 100%;"><i class="fas fa-check-circle"></i> Submit
+            Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. STATS BANNER
+       ========================================================================= -->
+  <div class="container">
+    <div class="stats-banner">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number" data-target="1999">1999</div>
+          <div class="stat-label">Year Established</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="27" data-suffix=" Acres">27 Acres</div>
+          <div class="stat-label">Lush Hilltop Campus</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="80" data-suffix="%+">80%+</div>
+          <div class="stat-label">Placement Record</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="7" data-suffix=" Depts">7 Depts</div>
+          <div class="stat-label">Undergraduate & Postgrad</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       6. OVERVIEW / ABOUT SECTION
+       ========================================================================= -->
+  <section class="overview-section" id="overview">
+    <div class="container overview-grid">
+      <div class="overview-text">
+        <span class="section-tag">Welcome to CEV</span>
+        <h2>Shaping Future Engineers & Innovators</h2>
+        <p>
+          College of Engineering Vadakara (CEV), formerly known as Co-operative Institute of Technology Vadakara, is the
+          first engineering college established under the Co-operative Academy of Professional Education (CAPE) by the
+          Government of Kerala in 1999.
+        </p>
+        <p>
+          Situated on the picturesque "Kakoramala" hilltop in Maniyur village, 13 km from Vadakara town, our 27-acre
+          campus provides an idyllic environment for technical learning, research, and holistic development.
+        </p>
+
+        <div class="overview-features">
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-university"></i></div>
+            <div>
+              <div class="feature-title">KTU & AICTE Affiliated</div>
+              <div class="feature-desc">Affiliated to APJ Abdul Kalam Technological University</div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-award"></i></div>
+            <div>
+              <div class="feature-title">NBA Accredited ECE</div>
+              <div class="feature-desc">Rigorous quality standards certified</div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-bus-alt"></i></div>
+            <div>
+              <div class="feature-title">10 Fleet College Buses</div>
+              <div class="feature-desc">Covering Vadakara, Koyilandi, Payyoli & Perambra</div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon"><i class="fas fa-trophy"></i></div>
+            <div>
+              <div class="feature-title">IEEE & IEDC Hub</div>
+              <div class="feature-desc">Active innovation & startup ecosystem</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview-media">
+        <div
+          style="background: linear-gradient(135deg, #1e3a8a, #0f172a); border-radius: var(--radius-lg); padding: 3rem; color: white; box-shadow: var(--shadow-lg); border: 1px solid var(--border-color);">
+          <i class="fas fa-quote-left"
+            style="font-size: 3rem; color: var(--accent); opacity: 0.8; margin-bottom: 1.5rem;"></i>
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; line-height: 1.3;">
+            Imparting Quality Technical Education to Meritorious Students
+          </h3>
+          <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.7; margin-bottom: 2rem;">
+            CEV is committed to uplifting students by providing world-class infrastructure, industry-oriented training,
+            research facilities, and affordable higher education.
+          </p>
+          <div style="display: flex; gap: 1rem;">
+            <span class="badge badge-nba"><i class="fas fa-check-circle"></i> ISO 9001:2015</span>
+            <span class="badge badge-cape"><i class="fas fa-graduation-cap"></i> Silver Jubilee Legacy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. ACADEMIC DEPARTMENTS & PROGRAMS
+       ========================================================================= -->
+  <section class="departments-section" id="departments">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Excellence</span>
+        <h2 class="section-title">Our Academic Departments</h2>
+        <p class="section-subtitle">Offering industry-aligned undergraduate B.Tech programs, postgraduate MCA, and
+          specialized technical diplomas.</p>
+      </div>
+
+      <div class="dept-grid">
+        <!-- CSE -->
+        <div class="dept-card">
+          <div class="dept-header">
+            <div class="dept-icon-wrapper"><i class="fas fa-laptop-code"></i></div>
+            <span class="badge badge-cape">UG Program</span>
+          </div>
+          <h3 class="dept-name">Computer Science & Engineering</h3>
+          <div class="dept-degree">B.Tech (4 Years)</div>
+          <p class="dept-desc">
+            Cutting-edge computational infrastructure covering Artificial Intelligence, Machine Learning, Cloud
+            Computing, Cyber Security, and Software Engineering.
+          </p>
+          <div class="dept-meta">
+            <span class="dept-seats">Intake: <b>60 Seats</b></span>
+            <button class="btn btn-sm btn-outline" onclick="openDeptModal('cse')">Explore <i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- ECE -->
+        <div class="dept-card">
+          <div class="dept-header">
+            <div class="dept-icon-wrapper"><i class="fas fa-microchip"></i></div>
+            <span class="badge badge-nba"><i class="fas fa-award"></i> NBA Accredited</span>
+          </div>
+          <h3 class="dept-name">Electronics & Communication</h3>
+          <div class="dept-degree">B.Tech (4 Years)</div>
+          <p class="dept-desc">
+            NBA accredited department offering deep expertise in VLSI design, Embedded Systems, Signal Processing,
+            Microcontrollers, and Wireless Networks.
+          </p>
+          <div class="dept-meta">
+            <span class="dept-seats">Intake: <b>60 Seats</b></span>
+            <button class="btn btn-sm btn-outline" onclick="openDeptModal('ece')">Explore <i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- EEE -->
+        <div class="dept-card">
+          <div class="dept-header">
+            <div class="dept-icon-wrapper"><i class="fas fa-bolt"></i></div>
+            <span class="badge badge-cape">UG Program</span>
+          </div>
+          <h3 class="dept-name">Electrical & Electronics</h3>
+          <div class="dept-degree">B.Tech (4 Years)</div>
+          <p class="dept-desc">
+            Focusing on power systems, renewable energy technology, electric vehicles, power electronics, and industrial
+            automation control systems.
+          </p>
+          <div class="dept-meta">
+            <span class="dept-seats">Intake: <b>60 Seats</b></span>
+            <button class="btn btn-sm btn-outline" onclick="openDeptModal('eee')">Explore <i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Civil -->
+        <div class="dept-card">
+          <div class="dept-header">
+            <div class="dept-icon-wrapper"><i class="fas fa-building"></i></div>
+            <span class="badge badge-cape">UG Program</span>
+          </div>
+          <h3 class="dept-name">Civil Engineering</h3>
+          <div class="dept-degree">B.Tech (4 Years)</div>
+          <p class="dept-desc">
+            Equipping students with modern structural mechanics, surveying, GIS technology, environmental engineering,
+            and sustainable construction practices.
+          </p>
+          <div class="dept-meta">
+            <span class="dept-seats">Intake: <b>60 Seats</b></span>
+            <button class="btn btn-sm btn-outline" onclick="openDeptModal('civil')">Explore <i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- IT -->
+        <div class="dept-card">
+          <div class="dept-header">
+            <div class="dept-icon-wrapper"><i class="fas fa-network-wired"></i></div>
+            <span class="badge badge-cape">UG Program</span>
+          </div>
+          <h3 class="dept-name">Information Technology</h3>
+          <div class="dept-degree">B.Tech (4 Years)</div>
+          <p class="dept-desc">
+            Specializing in modern full-stack web architectures, mobile tech, data engineering, enterprise networks, and
+            cloud application deployment.
+          </p>
+          <div class="dept-meta">
+            <span class="dept-seats">Intake: <b>60 Seats</b></span>
+            <button class="btn btn-sm btn-outline" onclick="openDeptModal('it')">Explore <i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- MCA -->
+        <div class="dept-card">
+          <div class="dept-header">
+            <div class="dept-icon-wrapper"><i class="fas fa-code"></i></div>
+            <span class="badge badge-iso">Postgraduate</span>
+          </div>
+          <h3 class="dept-name">Department of Computer Applications</h3>
+          <div class="dept-degree">MCA (2 Years)</div>
+          <p class="dept-desc">
+            Master of Computer Applications program training postgraduates in software architecture, database
+            management, and advanced IT research.
+          </p>
+          <div class="dept-meta">
+            <span class="dept-seats">Intake: <b>60 Seats</b></span>
+            <button class="btn btn-sm btn-outline" onclick="openDeptModal('mca')">Explore <i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Automation & Robotics -->
+        <div class="dept-card">
+          <div class="dept-header">
+            <div class="dept-icon-wrapper"><i class="fas fa-robot"></i></div>
+            <span class="badge badge-cape">Diploma</span>
+          </div>
+          <h3 class="dept-name">Automation & Robotics</h3>
+          <div class="dept-degree">Diploma Program</div>
+          <p class="dept-desc">
+            Hands-on technical diploma focused on industrial mechatronics, PLC automation, robotic arm programming, and
+            smart sensors.
+          </p>
+          <div class="dept-meta">
+            <span class="dept-seats">Intake: <b>30 Seats</b></span>
+            <button class="btn btn-sm btn-outline" onclick="openDeptModal('robotics')">Explore <i
+                class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. FACULTY & DEPARTMENT LEADERSHIP
+       ========================================================================= -->
+  <section class="faculty-section" id="faculty" style="padding: 6rem 0; background: var(--bg-main);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Mentors</span>
+        <h2 class="section-title">Faculty & Department Leadership</h2>
+        <p class="section-subtitle">Meet our distinguished department heads, professors, and research guides.</p>
+      </div>
+
+      <div class="faculty-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
+        <!-- Faculty 1 -->
+        <div class="faculty-card"
+          style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 1.75rem; text-align: center; box-shadow: var(--shadow-sm); transition: all var(--transition-normal);">
+          <img src="images/faculty1.png" alt="Dr. Deepthi K"
+            style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--primary-light);">
+          <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">Dr. Deepthi
+            K</h4>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--primary-light); margin-bottom: 0.5rem;">Head of
+            Department (CSE)</div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;">Editorial Board Member, Int.
+            Journal of Biotech & Bioinformatics. AI & Machine Learning Specialist.</p>
+          <span class="badge badge-nba"><i class="fas fa-envelope"></i> cse.hod@cev.ac.in</span>
+        </div>
+
+        <!-- Faculty 2 -->
+        <div class="faculty-card"
+          style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 1.75rem; text-align: center; box-shadow: var(--shadow-sm); transition: all var(--transition-normal);">
+          <div
+            style="width: 110px; height: 110px; border-radius: 50%; background: linear-gradient(135deg, #1e3a8a, #06b6d4); color: white; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; margin: 0 auto 1rem; border: 3px solid var(--secondary);">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">Prof.
+            Rajesh Kumar</h4>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem;">Head of
+            Department (ECE)</div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;">NBA Accreditation Co-ordinator.
+            Expert in VLSI Design & Embedded System Architecture.</p>
+          <span class="badge badge-nba"><i class="fas fa-envelope"></i> ece.hod@cev.ac.in</span>
+        </div>
+
+        <!-- Faculty 3 -->
+        <div class="faculty-card"
+          style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 1.75rem; text-align: center; box-shadow: var(--shadow-sm); transition: all var(--transition-normal);">
+          <div
+            style="width: 110px; height: 110px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; margin: 0 auto 1rem; border: 3px solid var(--accent);">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">Prof.
+            Suresh M</h4>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--accent); margin-bottom: 0.5rem;">Head of
+            Department (EEE)</div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;">Power Electronics & Renewable
+            Energy Mentor. IEEE Student Branch Staff Advisor.</p>
+          <span class="badge badge-iso"><i class="fas fa-envelope"></i> eee.hod@cev.ac.in</span>
+        </div>
+
+        <!-- Faculty 4 -->
+        <div class="faculty-card"
+          style="background: var(--bg-card); border-radius: var(--radius-lg); border: 1px solid var(--border-color); padding: 1.75rem; text-align: center; box-shadow: var(--shadow-sm); transition: all var(--transition-normal);">
+          <div
+            style="width: 110px; height: 110px; border-radius: 50%; background: linear-gradient(135deg, #10b981, #047857); color: white; display: flex; align-items: center; justify-content: center; font-size: 2.8rem; margin: 0 auto 1rem; border: 3px solid var(--success);">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.25rem;">Dr. Anjali
+            S</h4>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--success); margin-bottom: 0.5rem;">Head of
+            Department (Civil)</div>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-bottom: 1rem;">Structural Mechanics &
+            Environmental Engineering Researcher. ISTE Chapter Lead.</p>
+          <span class="badge badge-cape"><i class="fas fa-envelope"></i> civil.hod@cev.ac.in</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. LIVE NOTICES & QUICK PORTAL LINKS
+       ========================================================================= -->
+  <section class="notices-section" id="notices">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fas fa-bullhorn"></i> Official Bulletins</span>
+        <h2 class="section-title">Latest Announcements & Notifications</h2>
+        <p class="section-subtitle">Real-time updates regarding B.Tech admissions 2026, KTU academic circulars, NBA
+          accreditation, and placement drives.</p>
+      </div>
+
+      <div class="notices-wrapper">
+        <div class="notice-board">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+            <h3 style="font-size: 1.4rem; font-weight: 800; color: var(--text-main);"><i class="fas fa-bell"
+                style="color: var(--accent);"></i> Latest Notices & Circulars</h3>
+          </div>
+
+          <div class="notice-tabs">
+            <button class="tab-btn active" data-filter="all">All Updates</button>
+            <button class="tab-btn" data-filter="admission">Admissions 2026</button>
+            <button class="tab-btn" data-filter="exam">Exams & KTU</button>
+            <button class="tab-btn" data-filter="placement">Placements</button>
+          </div>
+
+          <div class="notice-list">
+            <!-- Screenshot Notice 1 -->
+            <div class="notice-item" data-category="admission">
+              <div class="date-badge">
+                <div class="date-day">31</div>
+                <div class="date-month">Jul 26</div>
+              </div>
+              <div class="notice-info">
+                <h4>B-tech NRI Seat Vacancy</h4>
+                <p>Applications invited for vacant NRI seats across Engineering departments for the 2026 academic batch.
+                </p>
+                <a href="#admissions-card" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+
+            <!-- Screenshot Notice 2 -->
+            <div class="notice-item" data-category="admission">
+              <div class="date-badge">
+                <div class="date-day">19</div>
+                <div class="date-month">Jun 26</div>
+              </div>
+              <div class="notice-info">
+                <h4>START 2k26 - Bridge course to Engineering</h4>
+                <p>A golden Opportunity for Engineering aspirants to get a strong foundation before starting their
+                  B-Tech journey. Duration: July to August.</p>
+                <a href="#admissions-card" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+
+            <!-- Screenshot Notice 3 -->
+            <div class="notice-item" data-category="admission">
+              <div class="date-badge">
+                <div class="date-day">23</div>
+                <div class="date-month">May 26</div>
+              </div>
+              <div class="notice-info">
+                <h4>B-Tech NRI Admission 2026</h4>
+                <p>Official registration portal open for B.Tech NRI quota seats at College of Engineering Vadakara.</p>
+                <a href="#admissions-card" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+
+            <!-- Notice 4 -->
+            <div class="notice-item" data-category="admission">
+              <div class="date-badge">
+                <div class="date-day">18</div>
+                <div class="date-month">May 26</div>
+              </div>
+              <div class="notice-info">
+                <h4>B-Tech NON-KEAM Admission 2026 Registration Started</h4>
+                <p>Applications invited for B.Tech Merit/Management Non-KEAM seats. Direct helpline: +91 9292546125.</p>
+                <a href="#admissions-card" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+
+            <!-- Notice 5 -->
+            <div class="notice-item" data-category="exam">
+              <div class="date-badge">
+                <div class="date-day">19</div>
+                <div class="date-month">Mar 26</div>
+              </div>
+              <div class="notice-info">
+                <h4>NBA Accreditation Granted - Dept. of Electronics & Communication</h4>
+                <p>Official notification regarding NBA re-accreditation for B.Tech ECE program at CE Vadakara.</p>
+                <a href="#admissions-card" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+
+            <!-- Notice 6 -->
+            <div class="notice-item" data-category="placement">
+              <div class="date-badge">
+                <div class="date-day">20</div>
+                <div class="date-month">Jan 26</div>
+              </div>
+              <div class="notice-info">
+                <h4>Students Placed at QSpiders, Infosys & UST Global</h4>
+                <p>Congratulations to the 2025/2026 graduating batch students securing software engineering roles.</p>
+                <a href="#placements" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+
+            <!-- Notice 7 -->
+            <div class="notice-item" data-category="admission">
+              <div class="date-badge">
+                <div class="date-day">14</div>
+                <div class="date-month">Jan 26</div>
+              </div>
+              <div class="notice-info">
+                <h4>IEEE Kerala Section Outstanding Student Volunteer Award 2025</h4>
+                <p>Devang C V (S8 CSE) awarded Outstanding Student Volunteer by IEEE Kerala Section.</p>
+                <a href="#achievers" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+
+            <!-- Notice 8 -->
+            <div class="notice-item" data-category="placement">
+              <div class="date-badge">
+                <div class="date-day">22</div>
+                <div class="date-month">Aug 25</div>
+              </div>
+              <div class="notice-info">
+                <h4>STRIDE Designathon & Makethon 2025 Winners</h4>
+                <p>CEV team won Best Faculty Mentorship and Makethon 1st Prize organized by K-DISC & IEEE Kerala
+                  Section.</p>
+                <a href="#achievers" class="btn btn-sm btn-outline"
+                  style="margin-top:0.4rem; padding:0.25rem 0.75rem; font-size:0.8rem;"><i class="fas fa-file-alt"></i>
+                  Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Access Widgets -->
+        <div class="quick-widget" id="quick-portals">
+          <h3><i class="fas fa-th-large" style="color: var(--primary-light);"></i> Quick Portals</h3>
+          <div class="portal-list">
+            <a href="https://cev.etlab.in/" target="_blank" class="portal-btn">
+              <i class="fas fa-laptop-house"></i> ETLab Student/Staff CMS
+            </a>
+            <a href="https://app.ktu.edu.in/login.jsp" target="_blank" class="portal-btn">
+              <i class="fas fa-university"></i> KTU Portal Login
+            </a>
+            <a href="#contact" class="portal-btn">
+              <i class="fas fa-user-shield"></i> Student Grievance Cell
+            </a>
+            <a href="#contact" class="portal-btn">
+              <i class="fas fa-hand-holding-heart"></i> Anti-Ragging Cell
+            </a>
+            <a href="#contact" class="portal-btn">
+              <i class="fas fa-file-pdf"></i> NIRF & AICTE Approvals
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. PLACEMENT & ACHIEVERS SHOWCASE
+       ========================================================================= -->
+  <section class="placements-section" id="placements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career Success</span>
+        <h2 class="section-title">Training & Placement Cell</h2>
+        <p class="section-subtitle">Our graduates are placed in leading global technology corporations and software
+          enterprises.</p>
+      </div>
+
+      <div class="recruiters-marquee">
+        <div class="recruiter-logo-track">
+          <div class="recruiter-pill"><i class="fas fa-building"></i> INFOSYS</div>
+          <div class="recruiter-pill"><i class="fas fa-building"></i> TCS</div>
+          <div class="recruiter-pill"><i class="fas fa-building"></i> UST GLOBAL</div>
+          <div class="recruiter-pill"><i class="fas fa-building"></i> QSPIDERS</div>
+          <div class="recruiter-pill"><i class="fas fa-building"></i> TECH MAHINDRA</div>
+          <div class="recruiter-pill"><i class="fas fa-building"></i> VONNUE</div>
+          <div class="recruiter-pill"><i class="fas fa-building"></i> EXPERION</div>
+        </div>
+      </div>
+
+      <div class="achievers-grid" id="achievers"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+        <!-- Student 1 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Avanthika-K-K-scaled.webp" alt="Avanthika K K"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--primary-light);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Avanthika K K</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> Infosys</span>
+        </div>
+
+        <!-- Student 2 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Aysha-Diya-P-A_.png" alt="Aysha Diya P A"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--secondary);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Aysha Diya P A</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> Infosys</span>
+        </div>
+
+        <!-- Student 3 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Farha-PP.jpg" alt="Farha P P"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--accent);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Farha P P</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> Infosys</span>
+        </div>
+
+        <!-- Student 4 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Fathimath-Noura-.jpg" alt="Fathimath Noura"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--success);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Fathimath Noura</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> Infosys</span>
+        </div>
+
+        <!-- Student 5 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Akhil_-Jyothidas.png" alt="Akhil Jyothidas"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--primary-light);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Akhil Jyothidas</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> UST Global</span>
+        </div>
+
+        <!-- Student 6 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Ayisha-Nahida_.jpg" alt="Ayisha Nahida"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--secondary);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Ayisha Nahida</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> UST Global</span>
+        </div>
+
+        <!-- Student 7 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Krishnadev_M-scaled.webp" alt="Krishnadev M"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--accent);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Krishnadev M</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> UST Global</span>
+        </div>
+
+        <!-- Student 8 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Akshay-Krishna-B-_EEE.jpg"
+            alt="Akshay Krishna B" class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--success);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Akshay Krishna B</h4>
+          <div class="achiever-dept">EEE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> Tech Mahindra</span>
+        </div>
+
+        <!-- Student 9 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/ALEN_SUNNY_CSE.jpg" alt="Alen Sunny"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--primary-light);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Alen Sunny</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> Tech Mahindra</span>
+        </div>
+
+        <!-- Student 10 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/ARATHY-K-CE.jpg" alt="Arathy K"
+            class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--secondary);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Arathy K</h4>
+          <div class="achiever-dept">CE 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> RedBus</span>
+        </div>
+
+        <!-- Student 11 -->
+        <div class="achiever-card">
+          <img src="images/student_devang.png" alt="Devang C V" class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--accent);">
+          <h4 class="achiever-name">Devang C V</h4>
+          <div class="achiever-dept">CSE 2025</div>
+          <span class="achiever-award"><i class="fas fa-award"></i> IEEE Volunteer Award</span>
+        </div>
+
+        <!-- Student 12 -->
+        <div class="achiever-card">
+          <img src="https://www.cev.ac.in/en/wp-content/uploads/2025/07/Khadeeja_Salih-e1753774778999.jpg"
+            alt="Khadeeja Salih K M" class="achiever-photo"
+            style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; border: 3px solid var(--success);"
+            onerror="this.src='images/student_devang.png'">
+          <h4 class="achiever-name">Khadeeja Salih</h4>
+          <div class="achiever-dept">IT 2025</div>
+          <span class="achiever-award"><i class="fas fa-briefcase"></i> Tech Mahindra</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. CAMPUS LIFE & STUDENT CLUBS
+       ========================================================================= -->
+  <section class="campus-life-section" id="campus-life">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Student Experience</span>
+        <h2 class="section-title">Campus Life & Organizations</h2>
+        <p class="section-subtitle">A vibrant campus culture driven by technical societies, hackathons, sports, and
+          social service.</p>
+      </div>
+
+      <div class="clubs-grid">
+        <div class="club-card">
+          <div class="club-icon"><i class="fas fa-microchip"></i></div>
+          <h3 class="club-title">IEEE Student Branch</h3>
+          <p class="club-desc">Highly active student chapter organizing national hackathons, technical workshops, and
+            winning state-level awards.</p>
+        </div>
+
+        <div class="club-card">
+          <div class="club-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3 class="club-title">IEDC Cell</h3>
+          <p class="club-desc">Innovation & Entrepreneurship Development Centre incubating student startups and patent
+            projects with K-DISC funding.</p>
+        </div>
+
+        <div class="club-card">
+          <div class="club-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3 class="club-title">TinkerHub CEV</h3>
+          <p class="club-desc">Peer-to-peer tech learning community mastering modern software tools, AI frameworks, and
+            open-source projects.</p>
+        </div>
+
+        <div class="club-card">
+          <div class="club-icon"><i class="fas fa-users-cog"></i></div>
+          <h3 class="club-title">muLearn & FOSS Cell</h3>
+          <p class="club-desc">Promoting Free and Open Source Software (FOSS) and skill-building platforms across
+            engineering disciplines.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. PRINCIPAL'S MESSAGE
+       ========================================================================= -->
+  <section class="principal-section" id="principal">
+    <div class="container">
+      <div class="principal-card">
+        <div class="principal-photo-wrap">
+          <img src="images/principal.jpg" alt="Dr. C K Smitha - Principal CE Vadakara" class="principal-photo">
+          <h3 class="principal-name">Dr. C K Smitha</h3>
+          <div class="principal-designation">Principal, CE Vadakara</div>
+          <div style="font-size: 0.85rem; color: var(--primary-light); font-weight: 700; margin-top: 0.3rem;">
+            principal@cev.ac.in</div>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: var(--text-main);">Principal's
+            Message</h3>
+          <blockquote class="principal-quote"
+            style="font-style: normal; font-size: 0.95rem; line-height: 1.7; color: var(--text-muted);">
+            <p style="margin-bottom: 0.75rem;"><strong>Dear Students, Staffs and Parents,</strong></p>
+            <p style="margin-bottom: 0.75rem;">Greetings from the College of Engineering Vadakara!</p>
+            <p style="margin-bottom: 0.75rem;">I hope this message finds you all in good health and high spirits. As we
+              embark on a new academic year, I would like to extend a warm welcome to all the students of College of
+              Engineering Vadakara.</p>
+            <p style="margin-bottom: 0.75rem;">It is my pleasure to welcome you all to the new academic year. Our
+              college has a long and proud history of providing students with a comprehensive education, and we are
+              dedicated to ensuring that every student has the tools and resources they need to succeed.</p>
+            <p style="margin-bottom: 0.75rem;">This year, we are focusing on making the college experience even more
+              engaging, innovative, and student-centered. We have a talented and dedicated faculty and staff who are
+              committed to your success, and we are always here to support you in any way we can.</p>
+            <p style="margin-bottom: 0.75rem;">In addition to a strong academic program, we also offer a wide range of
+              extracurricular activities, clubs, and organizations that are designed to help you build your skills, make
+              new friends, and have fun. I encourage you to take advantage of these opportunities and make the most of
+              your college experience.</p>
+            <p style="margin-top: 1rem;"><strong>Best regards,</strong><br><strong
+                style="color: var(--primary-light);">Dr. C.K Smitha</strong><br><em>Principal, College of Engineering
+                Vadakara</em></p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. CAMPUS FACILITIES (TABBED SWITCHER)
+       ========================================================================= -->
+  <section class="facilities-section" id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Infrastructure</span>
+        <h2 class="section-title">Campus Facilities & Amenities</h2>
+        <p class="section-subtitle">Equipped with state-of-the-art learning and recreational resources across 27 acres.
+        </p>
+      </div>
+
+      <div class="facility-tabs-container">
+        <div class="facility-nav">
+          <button class="facility-tab-btn active" data-tab="fac-transport"><i class="fas fa-bus"></i> Transportation (10
+            Buses)</button>
+          <button class="facility-tab-btn" data-tab="fac-library"><i class="fas fa-book-reader"></i> Central
+            Library</button>
+          <button class="facility-tab-btn" data-tab="fac-ccf"><i class="fas fa-desktop"></i> Central Computing
+            (CCF)</button>
+          <button class="facility-tab-btn" data-tab="fac-sports"><i class="fas fa-futbol"></i> Sports Complex</button>
+        </div>
+
+        <!-- Transport -->
+        <div class="facility-tab-content active" id="fac-transport">
+          <div class="facility-text">
+            <h3>Fleet of 10 College Buses</h3>
+            <p>
+              Managed by the College Bus Committee under the Principal, CEV operates 10 self-owned buses serving staff
+              and students across Vadakara (14 km), Payyoli (10 km), Koyilandi (35 km), and Perambra (25 km).
+            </p>
+            <span class="badge badge-cape"><i class="fas fa-clock"></i> Regular Morning & Evening Schedules</span>
+          </div>
+          <div>
+            <img src="images/transport.jpg" alt="CEV Fleet of 10 College Buses" class="facility-img">
+          </div>
+        </div>
+
+        <!-- Library -->
+        <div class="facility-tab-content" id="fac-library">
+          <div class="facility-text">
+            <h3>Automated Central Library</h3>
+            <p>
+              Houses 20,000+ volumes of technical books, 60 national/international print journals, and e-book
+              subscriptions from IEEE Press, Wiley, and Pearson. Students access IEEE Xplore digital library online.
+            </p>
+            <span class="badge badge-nba"><i class="fas fa-wifi"></i> Digital E-Journal Access</span>
+          </div>
+          <div>
+            <img src="images/library.jpg" alt="CEV Automated Central Library" class="facility-img">
+          </div>
+        </div>
+
+        <!-- CCF -->
+        <div class="facility-tab-content" id="fac-ccf">
+          <div class="facility-text">
+            <h3>Central Computing Facility (CCF)</h3>
+            <p>
+              High-performance computing center equipped with high-speed leased line internet connectivity,
+              Linux/Windows servers, and software development suites for academic assignments and online entrance exams.
+            </p>
+          </div>
+          <div
+            style="background: linear-gradient(135deg, #1e293b, #0f172a); border-radius: var(--radius-md); padding: 2.5rem; color: white; text-align: center;">
+            <i class="fas fa-network-wired" style="font-size: 4rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+            <h4>High-Speed Fiber Network</h4>
+            <p style="color: #cbd5e1; font-size: 0.9rem; margin-top: 0.5rem;">24/7 internet access for research &
+              coding.</p>
+          </div>
+        </div>
+
+        <!-- Sports -->
+        <div class="facility-tab-content" id="fac-sports">
+          <div class="facility-text">
+            <h3>Sports & Athletic Facilities</h3>
+            <p>
+              Features furnished basketball courts, volleyball court, football ground, and badminton courts. CEV teams
+              consistently win accolades in KTU university sports championships.
+            </p>
+          </div>
+          <div>
+            <img src="images/sports.jpg" alt="CEV Basketball Team & Sports" class="facility-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. CAMPUS PHOTO GALLERY
+       ========================================================================= -->
+  <section class="gallery-section" id="gallery" style="padding: 6rem 0; background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Life at CEV</span>
+        <h2 class="section-title">Campus Life & Event Gallery</h2>
+        <p class="section-subtitle">Moments captured from arts festivals, sports tournaments, transportation fleet, and
+          academic research.</p>
+      </div>
+
+      <div class="gallery-grid"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <!-- Image 1: Cultural Fest -->
+        <div
+          style="background: var(--bg-card); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <img src="images/cultural.jpg" alt="CEV Cultural & Arts Fest"
+            style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-main);">Cultural Fest & Chenda Melam</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">Annual Arts Festival
+              celebrations at CE Vadakara.</p>
+          </div>
+        </div>
+
+        <!-- Image 2: Sports Team -->
+        <div
+          style="background: var(--bg-card); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <img src="images/sports.jpg" alt="CEV Sports Basketball Team"
+            style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-main);">CEV Basketball Sports Team</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">University tournament
+              representation & athletic excellence.</p>
+          </div>
+        </div>
+
+        <!-- Image 3: Central Library -->
+        <div
+          style="background: var(--bg-card); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <img src="images/library.jpg" alt="CEV Central Library Students"
+            style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-main);">Automated Central Library</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">20,000+ technical volumes &
+              IEEE Xplore digital hub.</p>
+          </div>
+        </div>
+
+        <!-- Image 4: Transportation Fleet -->
+        <div
+          style="background: var(--bg-card); border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+          <img src="images/transport.jpg" alt="CEV College Buses Fleet"
+            style="width: 100%; height: 220px; object-fit: cover;">
+          <div style="padding: 1rem;">
+            <h4 style="font-size: 1rem; font-weight: 800; color: var(--text-main);">Fleet of 10 College Buses</h4>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">Convenient daily commute
+              covering 4 major Kozhikode routes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       14. INTERACTIVE DEPARTMENT MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="deptModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      <h3 id="modalDeptTitle"
+        style="font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.3rem;">Department Title
+      </h3>
+      <div id="modalDeptDegree"
+        style="font-size: 0.9rem; font-weight: 700; color: var(--primary-light); margin-bottom: 1rem;">Degree Details
+      </div>
+
+      <div style="display: flex; gap: 0.75rem; margin-bottom: 1.5rem;">
+        <span class="badge badge-nba" id="modalDeptStatus">NBA Status</span>
+        <span class="badge badge-cape">HOD: <strong id="modalDeptHod">HOD Name</strong></span>
+      </div>
+
+      <p id="modalDeptDesc"
+        style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;">
+        Department description...
+      </p>
+
+      <h4 style="font-weight: 800; font-size: 1rem; color: var(--text-main); margin-bottom: 0.5rem;"><i
+          class="fas fa-flask" style="color: var(--accent);"></i> Laboratory Infrastructure</h4>
+      <p id="modalDeptLabs"
+        style="font-size: 0.9rem; color: var(--text-muted); background: var(--bg-alt); padding: 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
+        Labs...
+      </p>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       14. FOOTER SECTION
+       ========================================================================= -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>College of Engineering Vadakara</h2>
+          <p>
+            Established in 1999 under CAPE, Govt. of Kerala. ISO 9001:2015 Certified & NBA Accredited Institution.
+          </p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="https://www.facebook.com" target="_blank" style="color:#ffffff; font-size: 1.2rem;"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" style="color:#ffffff; font-size: 1.2rem;"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" style="color:#ffffff; font-size: 1.2rem;"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <div class="footer-links">
+            <a href="#overview">About Institution</a>
+            <a href="#departments">Academic Programs</a>
+            <a href="#admissions-card">Admissions 2026</a>
+            <a href="#placements">Placement Cell</a>
+            <a href="#facilities">Campus Facilities</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Mandatory Bodies</h3>
+          <div class="footer-links">
+            <a href="https://cev.etlab.in/" target="_blank">ETLab Portal</a>
+            <a href="https://app.ktu.edu.in/login.jsp" target="_blank">KTU Portal</a>
+            <a href="#contact">Anti-Ragging Cell</a>
+            <a href="#contact">Internal Quality Assurance (IQAC)</a>
+            <a href="#contact">Parent Teacher Association (PTA)</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--accent);"></i>
+            Kakoramala, Kurunthodi, Maniyur P.O, Vadakara, Kozhikode, Kerala - 673523</p>
+          <p style="margin-bottom: 0.5rem;"><i class="fas fa-phone-alt" style="color: var(--accent);"></i> Helpline: +91
+            9292546125</p>
+          <p style="margin-bottom: 0.5rem;"><i class="fas fa-envelope" style="color: var(--accent);"></i>
+            principal@cev.ac.in</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 College of Engineering Vadakara (CEV). All Rights Reserved. Under CAPE - Govt. of Kerala.</div>
+        <div>Affiliated to APJ Abdul Kalam Technological University (KTU)</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
 </body>
+<<<<<<< HEAD
+
 </html>
+=======
+</html>
+>>>>>>> 6ade8e60b361c1d3e118abb442017156bb96291a
